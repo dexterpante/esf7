@@ -6,17 +6,9 @@ editor: visual
 
 ## Introduction
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+```{r load-data, include=FALSE}
+load("esf72023.RData")
 ```
-
-You can add options to executable code like this
 
 ```{r}
 #| echo: false
@@ -24,3 +16,8 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+
+head(teachers_data)
+```
