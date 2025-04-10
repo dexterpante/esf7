@@ -28,3 +28,15 @@ R1 <- teachers_data %>% select(school.name, region, division) %>%
   filter(region=="Region I")
 head(R1)
 ```
+
+## Analysis
+
+This is where you write.
+
+```{r}
+library(dplyr)
+
+teachers_data_subj %>%
+  select(region, division, teacher_group, designation) %>%
+  filter(teacher_group == "TEACHERS 1 - 3")
+```
