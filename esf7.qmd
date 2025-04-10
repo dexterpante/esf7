@@ -21,3 +21,10 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 head(teachers_data)
 ```
+
+```{r}
+library(dplyr)
+R1 <- teachers_data %>% select(school.name, region, division) %>% 
+  filter(region=="Region I")
+head(R1)
+```
